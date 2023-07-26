@@ -41,24 +41,29 @@
         <h2 class="mt-4">送信内容</h2>
         <table class="table">
             <tr>
+                <% company = params['company'] %>
                 <th>会社名</th>
-                <td>株式会社○△</td>
+                <td><%= company %></td>
             </tr>
             <tr>
+                <% name = params['name'] %>
                 <th>氏名</th>
-                <td>前田胡桃</td>
+                <td><%= name %></td>
             </tr>
             <tr>
+                <% mail = params['mail'] %>
                 <th>メール</th>
-                <td>kurumi0306maeda@gmail.com</td>
+                <td><%= mail %></td>
             </tr>
             <tr>
+                <% tel = params['tel'] %>
                 <th>電話番号</th>
-                <td>012-345-6789</td>
+                <td><%= tel %></td>
             </tr>
             <tr>
+                <% contents = params['content'] %>
                 <th>内容</th>
-                <td>宜しくお願いします。</td>
+                <td><%= contents %></td>
             </tr>
         </table>
         <div class="text-center mb-4">
